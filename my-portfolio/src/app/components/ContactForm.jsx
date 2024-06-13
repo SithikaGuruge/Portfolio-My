@@ -174,7 +174,7 @@ const toggleAlert = (message, type) => {
                     {errors.message && <span style={styles.errorMessage}>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn bg-gradient-to-br from-blue-800 via-purple-500 to-pink-600 hover:bg-white' type='submit' style={styles.submitBtn}>
+                <button className='submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white' type='submit' style={styles.submitBtn}>
                   Submit
                 </button>
               </form>
