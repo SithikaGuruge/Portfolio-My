@@ -5,18 +5,16 @@ import TabButtton from "./TabButtton";
 
 const Tab_DATA = [
   {
-    title: "skills",
-    id: "skills",
+    title: "other_skills",
+    id: "other_skills",
     content: (
       <ul className="list-disc pl-2">
-      <li>HTML</li>
-      <li>CSS</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>Mysql</li>
-        <li>MongoDB</li>
-        <li>JavaScript</li>
-        <li>React</li>
+      <li>Project Management</li>
+      <li>Team Work</li>
+        <li>Leadership</li>
+        <li>Analytical Skills</li>
+        <li>Chess</li>
+        <li>Graphic Design</li>
       </ul>
     ),
   },
@@ -59,7 +57,7 @@ const Tab_DATA = [
 ];
 
 export default function About() {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -92,13 +90,8 @@ export default function About() {
             the entire software development lifecycle with efficiency and
             innovation.
           </p>
-          <div className="mt-5 flex flex-row">
-            <TabButtton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              Skills
-            </TabButtton>
+          <div className="mt-5 flex flex-row md:space-x-6 md:text-xl text-lg">
+          
             <TabButtton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
@@ -116,6 +109,12 @@ export default function About() {
               active={tab === "certificates"}
             >
               Certificates
+            </TabButtton>
+            <TabButtton
+              selectTab={() => handleTabChange("other_skills")}
+              active={tab === "other_skills"}
+            >
+              Other Skills
             </TabButtton>
           </div>
           <div className="mt-8">
