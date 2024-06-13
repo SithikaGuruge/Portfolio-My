@@ -14,7 +14,7 @@ const ContactForm = () => {
   const styles = {
     container: {
       maxWidth: '600px',
-      margin: '0 auto',
+      margin: '0 0',
       padding: '20px',
       backgroundColor: '#f7f7f7',
       borderRadius: '8px',
