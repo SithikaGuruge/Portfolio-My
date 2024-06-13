@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import "dotenv/config";
+
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -13,17 +13,15 @@ const ContactForm = () => {
 
   const styles = {
     container: {
-
-      maxWidth: '600px',
-      margin: '0 0',
-      padding: '20px',
-      backgroundColor: 'black',
-      borderRadius: '8px',
-      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
+      maxWidth: "600px",
+      margin: "0 0",
+      padding: "20px",
+      backgroundColor: "black",
+      borderRadius: "8px",
+      boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
     },
     formRow: {
-      marginBottom: '5px'
-
+      marginBottom: "5px",
     },
     formInput: {
       width: "100%",
@@ -73,10 +71,10 @@ const ContactForm = () => {
 
       // Use emailjs to email contact form data
       await emailjs.send(
-        REACT_APP_SERVICE_ID,
-        REACT_APP_TEMPLATE_ID,
+        'service_xmnhaxd',
+        'template_f9tjhmi',
         templateParams,
-        REACT_APP_PUBLIC_KEY
+        'gz4lWS4WmJMoAaR8Q'
       );
 
       // Display success alert
@@ -106,9 +104,11 @@ const ContactForm = () => {
               >
                 {/* Row 1 of form */}
 
-                <div className='row formRow' style={styles.formRow}>
-                  <div className='col-6'>
-                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Name</h1>
+                <div className="row formRow" style={styles.formRow}>
+                  <div className="col-6">
+                    <h1 className="text-white flex justify-start py-1 font-bold">
+                      Your Name
+                    </h1>
 
                     <input
                       type="text"
@@ -125,9 +125,7 @@ const ContactForm = () => {
                       })}
                       className="form-control formInput"
                       style={styles.formInput}
-
-                      placeholder='Enter Your Name'
-
+                      placeholder="Enter Your Name"
                     ></input>
                     {errors.name && (
                       <span style={styles.errorMessage}>
@@ -136,8 +134,10 @@ const ContactForm = () => {
                     )}
                   </div>
 
-                  <div className='col-6 mt-3'>
-                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Email</h1>
+                  <div className="col-6 mt-3">
+                    <h1 className="text-white flex justify-start py-1 font-bold">
+                      Your Email
+                    </h1>
 
                     <input
                       type="email"
@@ -160,9 +160,11 @@ const ContactForm = () => {
                 </div>
                 {/* Row 2 of form */}
 
-                <div className='row formRow' style={styles.formRow}>
-                  <div className='col'>
-                  <h1 className='text-white flex justify-start py-1 font-bold'>Subject</h1>
+                <div className="row formRow" style={styles.formRow}>
+                  <div className="col">
+                    <h1 className="text-white flex justify-start py-1 font-bold">
+                      Subject
+                    </h1>
 
                     <input
                       type="text"
@@ -190,9 +192,11 @@ const ContactForm = () => {
                 </div>
                 {/* Row 3 of form */}
 
-                <div className='row formRow' style={styles.formRow}>
-                  <div className='col'>
-                  <h1 className='text-white flex justify-start py-1 font-bold'>Message</h1>
+                <div className="row formRow" style={styles.formRow}>
+                  <div className="col">
+                    <h1 className="text-white flex justify-start py-1 font-bold">
+                      Message
+                    </h1>
 
                     <textarea
                       rows={3}
@@ -212,8 +216,11 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <button className='submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white w-full' type='submit' style={styles.submitBtn}>
-
+                <button
+                  className="submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white w-full"
+                  type="submit"
+                  style={styles.submitBtn}
+                >
                   Submit
                 </button>
                 {alertInfo.display && (
@@ -240,23 +247,22 @@ const ContactForm = () => {
       </div>
 
       {alertInfo.display && (
-  <div
-    className={`alert alert-${alertInfo.type} alert-dismissible mt-2 flex justify-center`}
-    role='alert'
-  >
-    {alertInfo.message}
-    <button
-      type='button'
-      className='btn-close'
-      data-bs-dismiss='alert'
-      aria-label='Close'
-      onClick={() =>
-        setAlertInfo({ display: false, message: '', type: '' })
-      } 
-    ></button>
-  </div>
-)}
-
+        <div
+          className={`alert alert-${alertInfo.type} alert-dismissible mt-2 flex justify-center`}
+          role="alert"
+        >
+          {alertInfo.message}
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            onClick={() =>
+              setAlertInfo({ display: false, message: "", type: "" })
+            }
+          ></button>
+        </div>
+      )}
     </div>
   );
 };
