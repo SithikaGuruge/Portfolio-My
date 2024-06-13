@@ -13,15 +13,17 @@ const ContactForm = () => {
 
   const styles = {
     container: {
-      maxWidth: "600px",
-      margin: "0 0",
-      padding: "20px",
-      backgroundColor: "#96b096",
-      borderRadius: "8px",
-      boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+
+      maxWidth: '600px',
+      margin: '0 0',
+      padding: '20px',
+      backgroundColor: 'black',
+      borderRadius: '8px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
     },
     formRow: {
-      marginBottom: "15px",
+      marginBottom: '5px'
+
     },
     formInput: {
       width: "100%",
@@ -103,8 +105,11 @@ const ContactForm = () => {
                 noValidate
               >
                 {/* Row 1 of form */}
-                <div className="row formRow" style={styles.formRow}>
-                  <div className="col-6">
+
+                <div className='row formRow' style={styles.formRow}>
+                  <div className='col-6'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Name</h1>
+
                     <input
                       type="text"
                       name="name"
@@ -120,7 +125,9 @@ const ContactForm = () => {
                       })}
                       className="form-control formInput"
                       style={styles.formInput}
-                      placeholder="Name"
+
+                      placeholder='Enter Your Name'
+
                     ></input>
                     {errors.name && (
                       <span style={styles.errorMessage}>
@@ -128,7 +135,10 @@ const ContactForm = () => {
                       </span>
                     )}
                   </div>
-                  <div className="col-6 mt-3">
+
+                  <div className='col-6 mt-3'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Email</h1>
+
                     <input
                       type="email"
                       name="email"
@@ -149,8 +159,11 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className="row formRow" style={styles.formRow}>
-                  <div className="col">
+
+                <div className='row formRow' style={styles.formRow}>
+                  <div className='col'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Subject</h1>
+
                     <input
                       type="text"
                       name="subject"
@@ -176,8 +189,11 @@ const ContactForm = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className="row formRow" style={styles.formRow}>
-                  <div className="col">
+
+                <div className='row formRow' style={styles.formRow}>
+                  <div className='col'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Message</h1>
+
                     <textarea
                       rows={3}
                       name="message"
@@ -195,11 +211,9 @@ const ContactForm = () => {
                     )}
                   </div>
                 </div>
-                <button
-                  className="submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white"
-                  type="submit"
-                  style={styles.submitBtn}
-                >
+
+                <button className='submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white w-full' type='submit' style={styles.submitBtn}>
+
                   Submit
                 </button>
                 {alertInfo.display && (
@@ -224,6 +238,25 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+
+      {alertInfo.display && (
+  <div
+    className={`alert alert-${alertInfo.type} alert-dismissible mt-2 flex justify-center`}
+    role='alert'
+  >
+    {alertInfo.message}
+    <button
+      type='button'
+      className='btn-close'
+      data-bs-dismiss='alert'
+      aria-label='Close'
+      onClick={() =>
+        setAlertInfo({ display: false, message: '', type: '' })
+      } 
+    ></button>
+  </div>
+)}
+
     </div>
   );
 };

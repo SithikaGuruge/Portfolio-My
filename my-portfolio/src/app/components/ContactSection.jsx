@@ -16,7 +16,7 @@ export default function ContactSection() {
       <span className="flex justify-center flex-col py-3 ">
         <div className="text-center my-2 pb-5 md:text-2xl font-semibold">
           <TypeAnimation
-            sequence={["Reach out for a new project ", 1000, "Say Hello", 1000]}
+            sequence={["Let's Connect", 1000, "Say Hello!", 1000]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
@@ -27,10 +27,10 @@ export default function ContactSection() {
             <ContactForm />
           </div>
           <div>
-            <h1 className="mt-10 py-4 text-lg">
+            <h1 className="mt-10 py-4 text-md lg:text-lg">
               {" "}
-              Feel free to reach out via email or connect with me on social
-              media.
+              I'm Currently looking for new opportunities, my inbox is always open. Whether you 
+              have a question or just want to say hi, I'll try my best to get back to you!
             </h1>
             <div className="flex flex-row justify-center">
               <Link href="http://www.linkedin.com/in/sithika-guruge-37a580214">
