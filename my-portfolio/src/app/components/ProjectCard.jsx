@@ -31,7 +31,7 @@ export default function ProjectCard({ image, title, description, git, preview })
       </div>
       <div className="text-white bg-[#181818] lg:py-6 md:py-1 md:px-4 py-2 px-3 mt-2 sm:mt-2 md:mt-0 lg:mt-0.5 rounded-b-xl flex-grow">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-pink-300">{description}</p>
+        <p className="text-green-500">{description}</p>
       </div>
     </div>
 
