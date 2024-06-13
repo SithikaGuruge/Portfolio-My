@@ -8,15 +8,13 @@ const HeroSection = () => {
     <section>
     <div className='grid grid-cols-1 sm:grid-cols-12 '>
     <div className='col-span-7 place-self-center text-center sm:text-left'>
-    <h1 className='mb-4 text-4xl lg:text-6xl font-extrabold'> <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to bg-pink-700'>Hello, I'm {" "}</span> <br />
+    <h1 className='my-4 text-4xl lg:text-6xl font-extrabold'> <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#188300] to bg-[#a3ee5b]'>Hello, I'm {" "} <br/>Sithika Guruge</span> <br />
     <span className='text-3xl lg:text-5xl'>
     <TypeAnimation
       sequence={[
-        'Sithika',
-        1000, 
-        'Web developer',
+        'Full-Stack Web developer',
         1000,
-        'Mobile Developer',
+        'Mobile App Developer',
         1000,
         'UI/UX Designer',
         1000
@@ -28,12 +26,14 @@ const HeroSection = () => {
     </span>
 
     </h1>
-    <p className='sm:text-lg lg:text-xl mb-2 mr-5 text-base'>I am a highly motivated computer science and engineering student at the University of Moratuwa, with 
+
+    <p className='sm:text-lg lg:text-xl my-8 mr-5 text-base'>I am a highly motivated computer science and engineering student at the University of Moratuwa, with 
+
 excellent problem-solving abilities, attention to detail, and proficiency in various programming languages 
 and tools. </p>
     <div>
-    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-400 to-pink-500 hover:bg-slate-200 text-white'>Hire Me</button>
-    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-600 via-purple-400 to-pink-500 hover:bg-slate-200 border-white mt-2'>
+    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#a6bb53] via-[#1e5a07] to-[#071f03] hover:bg-slate-200 text-white'>Hire Me</button>
+    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#91bb53] via-[#1f5b08] to-[#071f03] hover:bg-slate-200 border-white mt-2'>
     <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Resume</span></button>
     </div>
     </div>
