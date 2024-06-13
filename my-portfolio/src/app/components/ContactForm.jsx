@@ -16,12 +16,12 @@ const ContactForm = () => {
       maxWidth: '600px',
       margin: '0 0',
       padding: '20px',
-      backgroundColor: '#f7f7f7',
+      backgroundColor: 'black',
       borderRadius: '8px',
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
     },
     formRow: {
-      marginBottom: '15px'
+      marginBottom: '5px'
     },
     formInput: {
       width: '100%',
@@ -103,6 +103,7 @@ const toggleAlert = (message, type) => {
                 {/* Row 1 of form */}
                 <div className='row formRow' style={styles.formRow}>
                   <div className='col-6'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Name</h1>
                     <input
                       type='text'
                       name='name'
@@ -115,11 +116,12 @@ const toggleAlert = (message, type) => {
                       })}
                       className='form-control formInput'
                       style={styles.formInput}
-                      placeholder='Name'
+                      placeholder='Enter Your Name'
                     ></input>
                     {errors.name && <span style={styles.errorMessage}>{errors.name.message}</span>}
                   </div>
                   <div className='col-6 mt-3'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Your Email</h1>
                     <input
                       type='email'
                       name='email'
@@ -139,6 +141,7 @@ const toggleAlert = (message, type) => {
                 {/* Row 2 of form */}
                 <div className='row formRow' style={styles.formRow}>
                   <div className='col'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Subject</h1>
                     <input
                       type='text'
                       name='subject'
@@ -161,6 +164,7 @@ const toggleAlert = (message, type) => {
                 {/* Row 3 of form */}
                 <div className='row formRow' style={styles.formRow}>
                   <div className='col'>
+                  <h1 className='text-white flex justify-start py-1 font-bold'>Message</h1>
                     <textarea
                       rows={3}
                       name='message'
@@ -174,7 +178,7 @@ const toggleAlert = (message, type) => {
                     {errors.message && <span style={styles.errorMessage}>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white' type='submit' style={styles.submitBtn}>
+                <button className='submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white w-full' type='submit' style={styles.submitBtn}>
                   Submit
                 </button>
               </form>
