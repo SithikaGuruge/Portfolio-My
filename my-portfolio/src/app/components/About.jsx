@@ -69,6 +69,7 @@ export default function About() {
   return (
     <section className="text-white">
       <div className="flex flex-col items-center relative top-20 py-3 sm:flex-row sm:items-start sm:space-x-10">
+      <div className="hidden sm:flex sm:w-full sm:h-full lg:w-1/2 sm:m-4 md:py-6">
         <Image
           src={"/Sithika Guruge.jpeg"}
           alt="about Image"
@@ -76,9 +77,10 @@ export default function About() {
           height={250}
           className="sm:order-1 sm:pt-20 pt-20"
         />
+        </div>
 
         <div className="flex flex-col items-center sm:items-start sm:order-2">
-          <h1 className="text-3xl sm:text-3xl font-bold py-5 sm:pt-10">
+          <h1 className="text-3xl sm:text-4xl font-bold py-5 sm:pt-10 mt-5">
             About Me
           </h1>
           <p className="py-0 text-center sm:text-lg sm:text-left">
