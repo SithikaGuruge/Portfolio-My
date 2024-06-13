@@ -26,7 +26,9 @@ const HeroSection = () => {
     </span>
 
     </h1>
-    <p className='sm:text-lg lg:text-xl my-8 text-base'>I am a highly motivated computer science and engineering student at the University of Moratuwa, with 
+
+    <p className='sm:text-lg lg:text-xl my-8 mr-5 text-base'>I am a highly motivated computer science and engineering student at the University of Moratuwa, with 
+
 excellent problem-solving abilities, attention to detail, and proficiency in various programming languages 
 and tools. </p>
     <div>
@@ -41,8 +43,8 @@ and tools. </p>
         src="/Sithika Guruge.jpeg"
         alt="image"
         className='absolute transform -translate-x-1/2 -translate-y-1/3 top-1/2 left-1/2'
-        width={250}
-        height={250}></Image>
+        width={300}
+        height={300}></Image>
         </div>
     </div>
     </div>
