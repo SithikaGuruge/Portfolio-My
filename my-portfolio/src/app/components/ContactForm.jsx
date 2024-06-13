@@ -188,7 +188,7 @@ const toggleAlert = (message, type) => {
       </div>
       {alertInfo.display && (
   <div
-    className={`alert alert-${alertInfo.type} alert-dismissible mt-5 flex`}
+    className={`alert alert-${alertInfo.type} alert-dismissible mt-2 flex justify-center`}
     role='alert'
   >
     {alertInfo.message}
@@ -199,7 +199,7 @@ const toggleAlert = (message, type) => {
       aria-label='Close'
       onClick={() =>
         setAlertInfo({ display: false, message: '', type: '' })
-      } // Clear the alert when close button is clicked
+      } 
     ></button>
   </div>
 )}
