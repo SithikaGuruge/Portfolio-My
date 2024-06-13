@@ -10,11 +10,11 @@ import Link from "next/link";
 export default function ContactSection() {
   return (
     <diV>
-      <div className="flex mt-10 font-bold text-3xl justify-center">
+      <div className="flex mt-16 font-bold text-3xl justify-center">
         Contact Me
       </div>
       <span className="flex justify-center flex-col py-3 ">
-        <div className="text-center my-2 pb-3 md:text-2xl font-semibold">
+        <div className="text-center my-2 pb-5 md:text-2xl font-semibold">
           <TypeAnimation
             sequence={["Reach out for a new project ", 1000, "Say Hello", 1000]}
             wrapper="span"
