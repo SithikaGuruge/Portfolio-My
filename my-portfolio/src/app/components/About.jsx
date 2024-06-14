@@ -45,6 +45,7 @@ const Tab_DATA = [
     id: "certificates",
     content: (
       <ul className="list-disc pl-2">
+      <li>Finalist-ENIGMA Hackathon </li>
         <li>Front-end development - Open UoM</li>
         <li>Mobile app development - Coursera</li>
         <li>Python Basic - Open UoM</li>
@@ -84,13 +85,7 @@ export default function About() {
             About Me
           </h1>
           <p className="py-0 text-center sm:text-lg sm:text-left">
-            I am a highly motivated computer science and engineering student at
-            the University of Moratuwa, with excellent problem-solving
-            abilities, attention to detail, and proficiency in various
-            programming languages and tools. Additionally, I possess expertise
-            in full stack development, allowing me to tackle challenges across
-            the entire software development lifecycle with efficiency and
-            innovation.
+          I am a highly motivated computer science and engineering student at the University of Moratuwa, with excellent problem-solving abilities, attention to detail, and proficiency in various programming languages and tools. I have excellent project management skills. Additionally, I possess expertise in full-stack development, enabling me to tackle challenges across the entire software development lifecycle with efficiency and innovation.
           </p>
           <div className="mt-5 flex flex-row md:space-x-6 md:text-xl text-lg">
           
