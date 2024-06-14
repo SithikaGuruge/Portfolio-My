@@ -70,7 +70,7 @@ export default function Projects() {
             Mobile
           </TabButtton>
         </div>
-        <div className="md:flex md:flex-row md:space-x-7">
+        <div className="md:flex md:flex-row md:space-x-7 ">
           {projects.map(
             (project) =>
               project.tag.includes(tab) && (

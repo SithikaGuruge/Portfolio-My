@@ -16,7 +16,7 @@ const HeroSection = () => {
               Sithika Guruge
             </span>{" "}
             <br />
-            <span className="text-3xl lg:text-5xl">
+            <span className="md:text-3xl lg:text-5xl text-lg">
               <TypeAnimation
                 sequence={[
                   "Full-Stack Web developer",
@@ -33,7 +33,7 @@ const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="sm:text-lg lg:text-xl my-8 mr-5 text-base">
+          <p className="sm:text-lg lg:text-xl my-8  text-sm">
             Third-year undergraduate in the Department of Computer Science and
             Engineering at the University of Moratuwa, very enthusiastic about
             full-stack web development and mobile app development.{" "}

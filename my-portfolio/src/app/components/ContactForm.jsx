@@ -15,7 +15,7 @@ const ContactForm = () => {
     container: {
       maxWidth: "600px",
       margin: "0 0",
-      padding: "20px",
+      padding: "10px",
       backgroundColor: "black",
       borderRadius: "8px",
       boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
@@ -71,10 +71,10 @@ const ContactForm = () => {
 
       // Use emailjs to email contact form data
       await emailjs.send(
-        'service_xmnhaxd',
-        'template_f9tjhmi',
+        "service_xmnhaxd",
+        "template_f9tjhmi",
         templateParams,
-        'gz4lWS4WmJMoAaR8Q'
+        "gz4lWS4WmJMoAaR8Q"
       );
 
       // Display success alert
@@ -123,7 +123,7 @@ const ContactForm = () => {
                           message: "Please use 30 characters or less",
                         },
                       })}
-                      className="form-control formInput"
+                      className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Enter Your Name"
                     ></input>
@@ -147,7 +147,7 @@ const ContactForm = () => {
                         pattern:
                           /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                       })}
-                      className="form-control formInput"
+                      className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Email address"
                     ></input>
@@ -179,7 +179,7 @@ const ContactForm = () => {
                           message: "Subject cannot exceed 75 characters",
                         },
                       })}
-                      className="form-control formInput"
+                      className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Subject"
                     ></input>
@@ -204,7 +204,7 @@ const ContactForm = () => {
                       {...register("message", {
                         required: true,
                       })}
-                      className="form-control formInput"
+                      className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Message"
                     ></textarea>

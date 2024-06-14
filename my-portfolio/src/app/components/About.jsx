@@ -82,7 +82,7 @@ export default function About() {
           <h1 className="text-3xl sm:text-4xl font-bold py-5 sm:pt-10 mt-5 lg:text-5xl">
             About Me
           </h1>
-          <p className="py-0 text-center sm:text-lg sm:text-left">
+          <p className="py-0 text-center sm:text-lg sm:text-left text-sm mx-auto">
             I am a highly motivated computer science and engineering student at
             the University of Moratuwa, with excellent problem-solving
             abilities, attention to detail, and proficiency in various
@@ -91,7 +91,7 @@ export default function About() {
             enabling me to tackle challenges across the entire software
             development lifecycle with efficiency and innovation.
           </p>
-          <div className="mt-5 flex flex-row md:space-x-6 md:text-xl text-lg">
+          <div className="mt-5 flex flex-row md:space-x-6 md:text-xl text-sm">
             <TabButtton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
@@ -117,7 +117,7 @@ export default function About() {
               Other Skills
             </TabButtton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 md:text-sm lg:text-lg text-sm">
             {Tab_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

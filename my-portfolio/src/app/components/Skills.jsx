@@ -62,19 +62,32 @@ export default function Skills() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-5 sm:pt-10 my-5">
           Skills
         </h1>
-        <div className="flex flex-row space-x-5 text-xs lg:text-lg">
+        <div className="flex flex-row space-x-1 text-xs md:text-sm lg:text-lg">
+          <style jsx>{`
+            @media (max-width: 640px) and (min-width: 320px) {
+              .text-xs {
+                font-size: 0.7rem; /* Adjust the font size as needed */
+              }
+              .text-sm {
+                font-size: 0.625rem; /* Adjust the font size as needed */
+              }
+              .text-lg {
+                font-size: 0.75rem; /* Adjust the font size as needed */
+              }
+            }
+          `}</style>
           <SkillsButton
             selectTab={() => handleTabChange("front-end")}
             active={tab === "front-end"}
           >
-            Front-end
+            Front{""}End
           </SkillsButton>
 
           <SkillsButton
             selectTab={() => handleTabChange("back-end")}
             active={tab === "back-end"}
           >
-            Back-end
+            Back{""}End
           </SkillsButton>
 
           <SkillsButton

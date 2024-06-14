@@ -11,7 +11,7 @@ export default function ProjectCard({
   tech,
 }) {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg mt-5 md:w-1/3 flex flex-col w-72  justify-center mx-auto md:mx-0 ">
+    <div className="rounded-xl overflow-hidden shadow-lg mt-5 md:w-1/3 flex flex-col w-72  justify-center mx-auto md:mx-0">
       <div className="h-32 md:h-42 lg:h-52 sm:h-42 relative group flex-shrink-0 ">
         <div
           className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-center"
@@ -47,9 +47,9 @@ export default function ProjectCard({
         </div>
       </div>
 
-      <div className="text-white bg-[#181818] lg:py-6 md:py-1 md:px-4 py-2 px-3 mt-2 sm:mt-2 md:mt-0 lg:mt-0.5 rounded-b-xl flex-grow">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-green-500">{description}</p>
+      <div className="text-white bg-[#181818] lg:py-5 md:py-1 md:px-4 py-2 px-3 sm:mt-2 md:mt-0 lg:mt-0.5 rounded-b-xl flex-grow">
+        <h5 className="text-lg md:text-xl font-semibold lg:mb-1">{title}</h5>
+        <p className="text-green-500 text-sm md:text-lg">{description}</p>
       </div>
     </div>
   );

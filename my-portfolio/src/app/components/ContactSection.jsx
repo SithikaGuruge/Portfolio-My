@@ -28,7 +28,7 @@ export default function ContactSection() {
               <ContactForm />
             </div>
             <div>
-              <h1 className="mt-10 py-4 text-md lg:text-lg">
+              <h1 className="mt-10 py-4 text-sm lg:text-lg">
                 {" "}
                 I&apos;m Currently looking for new opportunities, my inbox is always
                 open. Whether you have a question or just want to say hi, I&apos;ll
