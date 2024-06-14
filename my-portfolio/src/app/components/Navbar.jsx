@@ -17,9 +17,9 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-90 ">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-90 border-b border-cyan-800">
       <div className="flex flex-wrap text-xl md:text-3xl justify-between item-center mx-auto px-3 py-3 font-semibold">
-        <Link href="/">LOGO</Link>
+        <Link href="/">SG</Link>
         <div className="sm:hidden block ">
           {!isOpen ? (
             <button
