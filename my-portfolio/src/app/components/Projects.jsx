@@ -47,7 +47,7 @@ export default function Projects() {
   return (
     <div className="mt-24">
       <h2 className="text-3xl font-bold text-center py-8 lg:text-5xl sm:text-4xl">My Projects</h2>
-      <div className="flex flex-row items-center justify-center md:text-lg">
+      <div className="flex flex-row items-center justify-center md:text-lg lg:space-x-2">
       <TabButtton
               selectTab={() => handleTabChange("All")}
               active={tab === "All"}
