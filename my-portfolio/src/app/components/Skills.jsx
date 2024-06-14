@@ -53,6 +53,7 @@ export default function Skills() {
     });
   };
   return (
+    <section id="skills">
     <div className="flex flex-col items-center">
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-5 sm:pt-10 my-5">
         Skills
@@ -97,5 +98,6 @@ export default function Skills() {
         ))}
       </div>
     </div>
+    </section>
   );
 }

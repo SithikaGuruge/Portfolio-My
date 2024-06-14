@@ -9,7 +9,6 @@ import MenuItems from "./MenuItems";
 
 const navLinks = [
   { href: "#about", name: "About" },
-  
   { href: "#projects", name: "Projects" },
   { href: "#skills", name: "Skills" },
   { href: "#contact", name: "Contact" },

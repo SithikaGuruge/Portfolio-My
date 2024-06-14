@@ -68,7 +68,7 @@ export default function About() {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about">
       <div className="flex flex-col items-center relative top-20 py-3 sm:flex-row sm:items-start sm:space-x-10">
       <div className="hidden sm:flex sm:w-full sm:h-full lg:w-1/2 sm:m-4 md:py-6">
         <Image

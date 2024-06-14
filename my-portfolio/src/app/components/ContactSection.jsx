@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
+    <section id="contact" >
     <diV>
       <div className="flex mt-16 font-bold text-3xl justify-center sm:text-4xl lg:text-5xl">
         Contact Me
@@ -47,5 +48,6 @@ export default function ContactSection() {
         </div>
       </span>
     </diV>
+    </section>
   );
 }

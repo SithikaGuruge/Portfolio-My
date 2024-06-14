@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -29,7 +30,9 @@ const HeroSection = () => {
 
     <p className='sm:text-lg lg:text-xl my-8 mr-5 text-base'>Third-year undergraduate in the Department of Computer Science and Engineering at the University of Moratuwa, very enthusiastic about full-stack web development and mobile app development. </p>
     <div>
+    <Link href='#contact'>
     <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-green-600 via-[#1e5a07] to-yellow-400 hover:bg-slate-200 text-white'>Hire Me</button>
+    </Link>
     <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#91bb53] via-[#1f5b08] to-[#071f03] hover:bg-slate-200 border-white mt-2'>
     <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Resume</span></button>
     </div>
