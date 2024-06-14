@@ -9,9 +9,10 @@ const projects = [
     image: "/Projects/Arrival.png",
     title: "Arrival",
     description: "Tuorism Website",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     git:"https://github.com/deshithagallage/Arrival.git",
-    preview:""
+    preview:"",
+    tec: ["NextJs", "Node", "MongoDB","Tailwind"]
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const projects = [
     description: "HRM System",
     tag: ["All", "Web"],
     git:"https://github.com/SithikaGuruge/Jupiter_HRM.git",
-    preview:""
+    preview:"",
+    tec: ["React", "Node", "Mysql","Bootstrap"]
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const projects = [
     description: "Portfolio Website",
     tag: ["All", "Web"],
     git:"https://github.com/SithikaGuruge/Portfolio-My.git",
-    preview:""
+    preview:"",
+    tec: ["NextJs", "Node","Tailwind"]
   },
 ];
 export default function Projects() {
@@ -74,6 +77,7 @@ export default function Projects() {
               description={project.description}
               git={project.git}
               preview={project.preview}
+              tech={project.tec}
             >
             </ProjectCard>     
           )))} 

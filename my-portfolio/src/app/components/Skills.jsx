@@ -57,7 +57,7 @@ export default function Skills() {
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-5 sm:pt-10 my-5">
         Skills
       </h1>
-      <div className="flex flex-row space-x-5">
+      <div className="flex flex-row space-x-5 text-xs lg:text-lg">
         <SkillsButton
           selectTab={() => handleTabChange("front-end")}
           active={tab === "front-end"}

@@ -1,6 +1,6 @@
 export default function SkillsButton({ active, selectTab, children }) {
   const buttonClasses = active
-    ? "border rounded-xl p-1 px-2 bg-green-900 px-2"
+    ? "border rounded-xl p-1 px-2  bg-green-900"
     : " border rounded-xl p-1 px-2 text-[#ADB7BE]";
 
   return (
