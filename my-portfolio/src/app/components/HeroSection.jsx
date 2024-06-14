@@ -12,7 +12,7 @@ const HeroSection = () => {
           <h1 className="my-4 text-4xl lg:text-6xl font-extrabold">
             {" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to bg-yellow-400">
-              Hello, I'm <br />
+              Hello, I&apos;m <br />
               Sithika Guruge
             </span>{" "}
             <br />

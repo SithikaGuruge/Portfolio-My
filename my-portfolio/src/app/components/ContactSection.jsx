@@ -30,8 +30,8 @@ export default function ContactSection() {
             <div>
               <h1 className="mt-10 py-4 text-md lg:text-lg">
                 {" "}
-                I'm Currently looking for new opportunities, my inbox is always
-                open. Whether you have a question or just want to say hi, I'll
+                I&apos;m Currently looking for new opportunities, my inbox is always
+                open. Whether you have a question or just want to say hi, I&apos;ll
                 try my best to get back to you!
               </h1>
               <div className="flex flex-row justify-center">
