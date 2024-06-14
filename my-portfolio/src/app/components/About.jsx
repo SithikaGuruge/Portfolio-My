@@ -9,8 +9,8 @@ const Tab_DATA = [
     id: "other_skills",
     content: (
       <ul className="list-disc pl-2">
-      <li>Project Management</li>
-      <li>Team Work</li>
+        <li>Project Management</li>
+        <li>Team Work</li>
         <li>Leadership</li>
         <li>Analytical Skills</li>
         <li>Chess</li>
@@ -45,16 +45,14 @@ const Tab_DATA = [
     id: "certificates",
     content: (
       <ul className="list-disc pl-2">
-      <li>Finalist-ENIGMA Hackathon </li>
+        <li>Finalist-ENIGMA Hackathon </li>
         <li>Front-end development - Open UoM</li>
         <li>Mobile app development - Coursera</li>
         <li>Python Basic - Open UoM</li>
         <li>Python Intermidiate - Open UoM</li>
-
-
       </ul>
     ),
-  }
+  },
 ];
 
 export default function About() {
@@ -70,14 +68,14 @@ export default function About() {
   return (
     <section className="text-white" id="about">
       <div className="flex flex-col items-center relative top-20 py-3 sm:flex-row sm:items-start sm:space-x-10">
-      <div className="hidden sm:flex sm:w-full sm:h-full lg:w-1/2 sm:m-4 md:py-6">
-        <Image
-          src={"/Sithika Guruge2.jpg"}
-          alt="about Image"
-          width={250}
-          height={250}
-          className="sm:order-1 sm:pt-20 pt-20"
-        />
+        <div className="hidden sm:flex sm:w-full sm:h-full lg:w-1/2 sm:m-4 md:py-6">
+          <Image
+            src={"/Sithika Guruge2.jpg"}
+            alt="about Image"
+            width={250}
+            height={250}
+            className="sm:order-1 sm:pt-20 pt-20"
+          />
         </div>
 
         <div className="flex flex-col items-center sm:items-start sm:order-2">
@@ -85,10 +83,15 @@ export default function About() {
             About Me
           </h1>
           <p className="py-0 text-center sm:text-lg sm:text-left">
-          I am a highly motivated computer science and engineering student at the University of Moratuwa, with excellent problem-solving abilities, attention to detail, and proficiency in various programming languages and tools. I have excellent project management skills. Additionally, I possess expertise in full-stack development, enabling me to tackle challenges across the entire software development lifecycle with efficiency and innovation.
+            I am a highly motivated computer science and engineering student at
+            the University of Moratuwa, with excellent problem-solving
+            abilities, attention to detail, and proficiency in various
+            programming languages and tools. I have excellent project management
+            skills. Additionally, I possess expertise in full-stack development,
+            enabling me to tackle challenges across the entire software
+            development lifecycle with efficiency and innovation.
           </p>
           <div className="mt-5 flex flex-row md:space-x-6 md:text-xl text-lg">
-          
             <TabButtton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}

@@ -1,15 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-const variants ={
-  default:{
-    width:0
+const variants = {
+  default: {
+    width: 0,
   },
-  active:{width:"calc(100% - 0.75rem)"}
-}
+  active: { width: "calc(100% - 0.75rem)" },
+};
 export default function TabButtton({ active, selectTab, children }) {
-  const buttonClasses = active ? 'text-white ' : 'text-[#ADB7BE]';
-  
+  const buttonClasses = active ? "text-white " : "text-[#ADB7BE]";
+
   return (
     <button onClick={selectTab}>
       <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>

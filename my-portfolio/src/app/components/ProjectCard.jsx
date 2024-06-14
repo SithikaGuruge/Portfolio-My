@@ -27,7 +27,6 @@ export default function ProjectCard({
                 className="bg-black rounded-lg px-1 lg:px-2 m-0.1 border-green-500 border"
               >
                 {item}
-                
               </h1>
             ))}
           </div>
