@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function ContactSection() {
   return (
     <diV>
-      <div className="flex mt-16 font-bold text-3xl justify-center">
+      <div className="flex mt-16 font-bold text-3xl justify-center sm:text-4xl lg:text-5xl">
         Contact Me
       </div>
       <span className="flex justify-center flex-col py-3 ">

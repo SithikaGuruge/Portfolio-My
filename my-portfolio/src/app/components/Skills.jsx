@@ -54,7 +54,7 @@ export default function Skills() {
   };
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl sm:text-4xl font-bold py-5 sm:pt-10 my-5">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-5 sm:pt-10 my-5">
         Skills
       </h1>
       <div className="flex flex-row space-x-5">

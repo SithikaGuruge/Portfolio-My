@@ -80,7 +80,7 @@ export default function About() {
         </div>
 
         <div className="flex flex-col items-center sm:items-start sm:order-2">
-          <h1 className="text-3xl sm:text-4xl font-bold py-5 sm:pt-10 mt-5">
+          <h1 className="text-3xl sm:text-4xl font-bold py-5 sm:pt-10 mt-5 lg:text-5xl">
             About Me
           </h1>
           <p className="py-0 text-center sm:text-lg sm:text-left">
