@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -14,7 +13,7 @@ const ContactForm = () => {
   const styles = {
     container: {
       maxWidth: "600px",
-      margin: "0 0",
+      margin: "0 auto",
       padding: "10px",
       backgroundColor: "black",
       borderRadius: "8px",
@@ -53,15 +52,15 @@ const ContactForm = () => {
     setAlertInfo({ display: true, message, type });
     setTimeout(() => {
       setAlertInfo({ display: false, message: "", type: "" });
+      setDisabled(false); // Re-enable form submission after alert hides
     }, 5000);
   };
+
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;
     try {
-      // Disable form while processing submission
-      setDisabled(true);
+      setDisabled(true); // Disable form while processing submission
 
-      // Define template params
       const templateParams = {
         name,
         email,
@@ -69,7 +68,6 @@ const ContactForm = () => {
         message,
       };
 
-      // Use emailjs to email contact form data
       await emailjs.send(
         "service_xmnhaxd",
         "template_f9tjhmi",
@@ -77,17 +75,23 @@ const ContactForm = () => {
         "gz4lWS4WmJMoAaR8Q"
       );
 
-      // Display success alert
-      toggleAlert("Form submission was successful!", "success");
+      toggleAlert("Form submission was successful!", "green");
     } catch (e) {
       console.error(e);
-      // Display error alert
-      toggleAlert("Uh oh. Something went wrong.", "danger");
+      toggleAlert("Uh oh. Something went wrong.", "red");
     } finally {
-      // Re-enable form submission
-      setDisabled(false);
-      // Reset contact form fields after submission
       reset();
+    }
+  };
+
+  const getAlertStyles = (type) => {
+    switch (type) {
+      case "green":
+        return "text-green-600 ";
+      case "red":
+        return "text-red-600";
+      default:
+        return "";
     }
   };
 
@@ -102,14 +106,11 @@ const ContactForm = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 noValidate
               >
-                {/* Row 1 of form */}
-
                 <div className="row formRow" style={styles.formRow}>
                   <div className="col-6">
                     <h1 className="text-white flex justify-start py-1 font-bold">
                       Your Name
                     </h1>
-
                     <input
                       type="text"
                       name="name"
@@ -126,7 +127,7 @@ const ContactForm = () => {
                       className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Enter Your Name"
-                    ></input>
+                    />
                     {errors.name && (
                       <span style={styles.errorMessage}>
                         {errors.name.message}
@@ -138,7 +139,6 @@ const ContactForm = () => {
                     <h1 className="text-white flex justify-start py-1 font-bold">
                       Your Email
                     </h1>
-
                     <input
                       type="email"
                       name="email"
@@ -150,7 +150,7 @@ const ContactForm = () => {
                       className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Email address"
-                    ></input>
+                    />
                     {errors.email && (
                       <span style={styles.errorMessage}>
                         Please enter a valid email address
@@ -158,14 +158,12 @@ const ContactForm = () => {
                     )}
                   </div>
                 </div>
-                {/* Row 2 of form */}
 
                 <div className="row formRow" style={styles.formRow}>
                   <div className="col">
                     <h1 className="text-white flex justify-start py-1 font-bold">
                       Subject
                     </h1>
-
                     <input
                       type="text"
                       name="subject"
@@ -182,7 +180,7 @@ const ContactForm = () => {
                       className="form-control formInput text-sm"
                       style={styles.formInput}
                       placeholder="Subject"
-                    ></input>
+                    />
                     {errors.subject && (
                       <span style={styles.errorMessage}>
                         {errors.subject.message}
@@ -190,14 +188,12 @@ const ContactForm = () => {
                     )}
                   </div>
                 </div>
-                {/* Row 3 of form */}
 
                 <div className="row formRow" style={styles.formRow}>
                   <div className="col">
                     <h1 className="text-white flex justify-start py-1 font-bold">
                       Message
                     </h1>
-
                     <textarea
                       rows={3}
                       name="message"
@@ -220,12 +216,15 @@ const ContactForm = () => {
                   className="submit-btn bg-gradient-to-br from-[#183c2a] via-[#11823b] to-[#48bf53] hover:bg-white w-full"
                   type="submit"
                   style={styles.submitBtn}
+                  disabled={disabled}
                 >
                   Submit
                 </button>
                 {alertInfo.display && (
                   <div
-                    className={`alert alert-${alertInfo.type} alert-dismissible mt-5 flex justify-center`}
+                    className={`alert alert-dismissible mt-5 flex justify-center ${getAlertStyles(
+                      alertInfo.type
+                    )}`}
                     role="alert"
                   >
                     {alertInfo.message}
@@ -236,7 +235,7 @@ const ContactForm = () => {
                       aria-label="Close"
                       onClick={() =>
                         setAlertInfo({ display: false, message: "", type: "" })
-                      } // Clear the alert when close button is clicked
+                      }
                     ></button>
                   </div>
                 )}
@@ -245,24 +244,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-
-      {alertInfo.display && (
-        <div
-          className={`alert alert-${alertInfo.type} alert-dismissible mt-2 flex justify-center`}
-          role="alert"
-        >
-          {alertInfo.message}
-          <button
-            type="button"
-            className="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-            onClick={() =>
-              setAlertInfo({ display: false, message: "", type: "" })
-            }
-          ></button>
-        </div>
-      )}
     </div>
   );
 };
