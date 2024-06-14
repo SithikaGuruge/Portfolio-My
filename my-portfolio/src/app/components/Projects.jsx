@@ -12,7 +12,7 @@ const projects = [
     tag: ["All", "Web"],
     git: "https://github.com/deshithagallage/Arrival.git",
     preview: "",
-    tec: ["NextJs", "Node", "MongoDB", "Tailwind"],
+    tec: ["NextJs", "NodeJs", "MongoDB", "Tailwind"],
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     tag: ["All", "Web"],
     git: "https://github.com/SithikaGuruge/Jupiter_HRM.git",
     preview: "",
-    tec: ["React", "Node", "Mysql", "Bootstrap"],
+    tec: ["React", "NodeJs", "Mysql", "Bootstrap"],
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
     tag: ["All", "Web"],
     git: "https://github.com/SithikaGuruge/Portfolio-My.git",
     preview: "",
-    tec: ["NextJs", "Node", "Tailwind"],
+    tec: ["NextJs", "Tailwind"],
   },
 ];
 export default function Projects() {
@@ -70,7 +70,7 @@ export default function Projects() {
             Mobile
           </TabButtton>
         </div>
-        <div className="md:flex md:flex-row md:space-x-7 ">
+        <div className="md:flex md:flex-row md:space-x-7">
           {projects.map(
             (project) =>
               project.tag.includes(tab) && (

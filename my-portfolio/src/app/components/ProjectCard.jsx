@@ -11,8 +11,8 @@ export default function ProjectCard({
   tech,
 }) {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg mt-5 md:w-1/3 flex flex-col w-72  justify-center mx-auto md:mx-0">
-      <div className="h-32 md:h-42 lg:h-52 sm:h-42 relative group flex-shrink-0 ">
+    <div className="rounded-xl overflow-hidden mt-5 md:w-1/3 flex flex-col justify-center mx-0">
+      <div className="h-32 md:h-42 lg:h-52 sm:h-42 relative group ">
         <div
           className="absolute top-0 left-0 w-full h-full bg-no-repeat bg-center"
           style={{

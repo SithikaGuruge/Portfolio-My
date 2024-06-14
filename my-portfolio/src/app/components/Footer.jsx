@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-10 pt-10">
+    <div className="lg:mt-10 pt-10">
       <hr></hr>
       <div className="flex flex-row justify-between py-6 text-xs sm:text-sm md:text-lg ">
         <h1>Sithika Guruge</h1>
