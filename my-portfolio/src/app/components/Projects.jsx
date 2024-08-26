@@ -6,7 +6,7 @@ import TabButtton from "./TabButtton";
 const projects = [
   {
     id: 1,
-    image: "/Projects/Arrival.png",
+    image: "/Projects/MovieMingle.png",
     title: "Movie Mingle",
     description:
       "Developed a comprehensive seat booking system that allows users to reserve seats for movies, submit reviews for both films and theaters, and request refunds. The system also features an integrated chatbot to assist users by providing detailed information about the system and its content.",
@@ -79,7 +79,7 @@ const projects = [
     tag: ["All", "Others"],
     git: "https://github.com/SithikaGuruge/PL_Group_47.git",
     preview: "",
-    tec: ["NextJs", "Tailwind"],
+    tec: ["C++"],
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ const projects = [
     tag: ["All", "Others"],
     git: "https://github.com/SithikaGuruge/Email-Client.git",
     preview: "",
-    tec: ["NextJs", "Tailwind"],
+    tec: ["Java", "Swing"],
   },
 ];
 export default function Projects() {
