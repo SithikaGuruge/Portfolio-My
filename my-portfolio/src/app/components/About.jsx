@@ -23,10 +23,10 @@ const Tab_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Web Committee Lead - MERCon</li>
+        <li>Web Master - MERCon 2024</li>
         <li>Web Committee Member - Mora UXPlore</li>
-        <li>Director of Web and PR - UoM Leos</li>
-        <li>Marcketing and Web Committee Member - IEEE(RAAS)</li>
+        <li>Director of Web and PR - UoM Leos(2023-2024)</li>
+        <li>Marketing and Web Committee Member - IEEE(RAAS)</li>
       </ul>
     ),
   },
@@ -35,8 +35,11 @@ const Tab_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>ST. Thomas College</li>
-        <li>Faculty of Engineering, University of Moratuwa</li>
+        <li>ST. Thomas College (2011-2020)</li>
+        <li>
+          Department of Computer Science and Engineering , Faculty of
+          Engineering, University of Moratuwa (2021-present)
+        </li>
       </ul>
     ),
   },

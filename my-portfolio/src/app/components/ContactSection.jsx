@@ -12,7 +12,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 export default function ContactSection() {
   return (
     <section id="contact">
-      <diV>
+      <div>
         <div className="flex lg:mt-10 font-bold text-3xl justify-center sm:text-4xl lg:text-5xl">
           Contact Me
         </div>
@@ -53,7 +53,7 @@ export default function ContactSection() {
             </div>
           </div>
         </span>
-      </diV>
+      </div>
     </section>
   );
 }

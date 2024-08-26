@@ -44,11 +44,17 @@ const HeroSection = () => {
                 Hire Me
               </button>
             </Link>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#91bb53] via-[#1f5b08] to-[#071f03] hover:bg-slate-200 border-white mt-2">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Resume
-              </span>
-            </button>
+            <Link
+              href="/SithikaGuruge.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#91bb53] via-[#1f5b08] to-[#071f03] hover:bg-slate-200 border-white mt-2">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Resume
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4">
